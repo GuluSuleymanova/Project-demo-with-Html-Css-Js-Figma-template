@@ -1,0 +1,167 @@
+.section2,.section3{
+position: relative;
+padding: 10px 0;
+
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+max-width: 91%;
+margin: auto;
+
+.card{
+width: 100%;
+height: 100%;
+background: transparent;
+color: $text-color;
+border: none;
+overflow: hidden;
+transform: scale(1);
+transition: all 1s;
+
+&:hover{
+overflow: hidden;
+transform: scale(1.15);
+border: 1px solid red;
+border-radius: 8px;
+z-index: 99;
+transition: all 1s;
+@include background-part2;
+
+.card-body{
+padding-left: 1rem;
+
+.icon-list{
+display:flex;
+}
+
+.info-part{
+
+.card-text{
+display: flex;
+font-size: 11px;
+}
+}
+}
+}
+
+.image{
+img{
+border-radius: 8px;
+}
+}
+
+.card-body{
+padding-left:0;
+
+.info-part{
+display: flex;
+justify-content: space-between;
+
+.card-title{
+font-family:$font-family1;
+font-size: 14px;
+margin-bottom: 0;
+
+}
+.card-text{
+font-family: $font-family2;
+font-size: 12px;
+display: none;
+}
+}
+
+.icon-list{
+display: none;
+justify-content: center;
+margin-top: 40px;
+align-items: center;
+
+
+span{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 34px;
+height: 34px;
+border:1px solid rgba(15, 247, 240, 0.4);
+border-radius: 100%;
+@include background-part2;
+
+&:nth-child(2){
+background: radial-gradient(100% 100% at 0% 0%, #0CF9F0 0%, #D686FF 100%) !important;
+box-shadow: inset -2.53935px -2.53935px 126.967px rgba(255, 255, 255, 0.02) !important;
+backdrop-filter: blur(5.25px) !important;
+width: 42px;
+height: 42px;
+margin: 0 5px;
+}
+}
+}
+}
+}
+}
+}
+
+@media screen and (max-width:1024px) {
+.section2,.section3{
+
+.container{
+max-width: 95%;
+margin: auto;
+
+.card{
+.card-body{
+padding: 10px;
+
+.info-part{
+.card-title{
+font-size: 12px !important;
+}
+}
+}
+} 
+}
+}
+}   
+
+@media screen and(max-width:468px) {
+.section2,.section3{
+
+.container{
+max-width: 95%;
+margin: auto;
+
+.card{
+.card-body{
+padding: 10px;
+
+.info-part{
+display: block;
+
+.card-title{
+font-size: 12px !important;
+}
+.card-text{
+font-size: 10px !important;
+}
+}
+
+.icon-list{
+margin-top: 20px;
+
+span{
+width: 25px;
+height: 25px;
+&:nth-child(2){
+width: 30px;
+height: 30px;
+}
+}
+}
+}
+} 
+}
+}
+}
